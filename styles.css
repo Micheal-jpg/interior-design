@@ -1,0 +1,1281 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    margin-left: 70px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contact{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    border: 2px solid;
+    padding-inline: 10px;   
+}
+
+.middle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    
+}
+
+.hero{
+    display: flex;
+    background-color:  lightyellow;
+    padding: 50px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.hero-section{
+    max-width: 50%;
+}
+
+.hero h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.hero p{
+    font-size: 25px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.button{
+    display: inline-block;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 5px ;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+}
+
+.hero-image img{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    gap: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about-text{
+    max-width: 50%;
+}
+
+.about-text h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.about-text p{
+    font-size: 25px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.btn{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    border: 2px solid;
+    padding-inline: 10px;   
+}
+
+.projects{
+    background-color:  lightyellow;
+    padding-inline: 40px;
+    padding-block: 50px;
+    display: grid;
+    position: relative;
+}
+
+.projects h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.projects p{
+    font-size: 25px;
+    color: grey;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text p{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.flex-container{
+    margin-top: 40px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 30px;
+    z-index: 4;
+}
+
+.flex-container div{
+    width: 80%;
+}
+
+.flex-container div img{
+    width: 100%;
+}
+
+.flex-container div p{
+    font-size: 25px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.flex-container div a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    border: 2px solid;
+    padding-inline: 10px;
+    transform: rotateZ('-30deg');
+}
+
+
+.design{
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 40px;
+    padding-block: 50px;
+}
+
+.images{
+    flex: 1 1 60%;
+    display:grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "image 1 image2"
+        "image 1 image3";
+    
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.images img:nth-child(1){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.images img:nth-child(2){
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.images img:nth-child(3){
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.service{
+    flex: 1 1 40%;
+    padding: 20px;
+    padding-inline: 40px;
+    padding-block: 50px;
+}
+
+.service h1{
+    font-size: 2em;
+    margin-bottom: 15px;
+    
+}
+
+.service p{
+    margin-bottom: 10px;
+}
+
+.service ul{
+    list-style: none;
+}
+
+.service li{
+    margin-bottom: 15px;
+}
+
+.service h2{
+    padding: 15px;
+}
+
+.service li p{
+    font-size: 1em;
+}
+
+.cta-section {
+    background-image: url('Image\ 2/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color:white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cta-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #8B5A2B;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #724a2a;
+}
+
+footer {
+    background-color: #8B5A2B;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media ul {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media ul li {
+    list-style-type: none;
+}
+
+.social-media ul li a img {
+    width: 24px;
+    height: 24px;
+}
+
+.subscribe form {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 70%;
+}
+
+.subscribe button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #8B5A2B;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #724a2a;
+    color: #ffffff;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    nav ul li a, .contact {
+        font-size: 20px;
+    }
+
+    .middle {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-section {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p, .button, .about-text p, .projects p, .flex-container div p, .flex-container div a, .text p {
+        font-size: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .projects {
+        padding-inline: 20px;
+        padding-block: 30px;
+    }
+
+    .flex-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .flex-container div {
+        width: 100%;
+    }
+
+    .design {
+        flex-direction: column;
+        padding-inline: 20px;
+        padding-block: 30px;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: unset;
+    }
+
+    .images img {
+        height: auto;
+    }
+
+    .service {
+        padding: 20px;
+    }
+
+    .cta-section {
+        padding: 30px 0;
+    }
+
+    .cta-container h2 {
+        font-size: 20px;
+    }
+
+    .cta-container p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+
+    .footer-section h4 {
+        font-size: 14px;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 6px;
+    }
+
+    .footer-section ul li a {
+        font-size: 14px;
+    }
+
+    .social-media ul {
+        gap: 5px;
+    }
+
+    .social-media ul li a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .subscribe form {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .subscribe input {
+        width: 100%;
+    }
+
+    .subscribe button {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+    }
+}
+/* Large Mobile View */
+@media (max-width: 425px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0 0 15px 0;
+    }
+
+    nav ul li a, .contact {
+        font-size: 18px;
+    }
+
+    .middle {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .hero-section {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-text h1 {
+        font-size: 25px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+
+    .projects {
+        padding-inline: 15px;
+        padding-block: 20px;
+    }
+
+    .projects h1 {
+        font-size: 25px;
+    }
+
+    .projects p {
+        font-size: 18px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    .flex-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .flex-container div {
+        width: 100%;
+    }
+
+    .flex-container div p {
+        font-size: 18px;
+    }
+
+    .flex-container div a {
+        font-size: 18px;
+    }
+
+    .design {
+        flex-direction: column;
+        padding-inline: 15px;
+        padding-block: 20px;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: unset;
+    }
+
+    .images img {
+        height: auto;
+    }
+
+    .service {
+        padding: 15px;
+    }
+
+    .cta-section {
+        padding: 20px 0;
+    }
+
+    .cta-container h2 {
+        font-size: 18px;
+    }
+
+    .cta-container p {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+
+    .footer-section h4 {
+        font-size: 14px;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 6px;
+    }
+
+    .footer-section ul li a {
+        font-size: 14px;
+    }
+
+    .social-media ul {
+        gap: 5px;
+    }
+
+    .social-media ul li a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .subscribe form {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .subscribe input {
+        width: 100%;
+    }
+
+    .subscribe button {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
+
+/* Medium Mobile View */
+@media (max-width: 375px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0 0 10px 0;
+    }
+
+    nav ul li a, .contact {
+        font-size: 16px;
+    }
+
+    .middle {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .hero-section {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-text h1 {
+        font-size: 22px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .projects {
+        padding-inline: 10px;
+        padding-block: 15px;
+    }
+
+    .projects h1 {
+        font-size: 22px;
+    }
+
+    .projects p {
+        font-size: 16px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .flex-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .flex-container div {
+        width: 100%;
+    }
+
+    .flex-container div p {
+        font-size: 16px;
+    }
+
+    .flex-container div a {
+        font-size: 16px;
+    }
+
+    .design {
+        flex-direction: column;
+        padding-inline: 10px;
+        padding-block: 15px;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: unset;
+    }
+
+    .images img {
+        height: auto;
+    }
+
+    .service {
+        padding: 10px;
+    }
+
+    .cta-section {
+        padding: 15px 0;
+    }
+
+    .cta-container h2 {
+        font-size: 16px;
+    }
+
+    .cta-container p {
+        font-size: 12px;
+    }
+
+    .cta-button {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+
+    .footer-section h4 {
+        font-size: 14px;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 6px;
+    }
+
+    .footer-section ul li a {
+        font-size: 14px;
+    }
+
+    .social-media ul {
+        gap: 5px;
+    }
+
+    .social-media ul li a img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .subscribe form {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .subscribe input {
+        width: 100%;
+    }
+
+    .subscribe button {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 320px) {
+    nav {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0 0 5px 0;
+    }
+
+    nav ul li a,
+    .contact {
+        font-size: 14px;
+    }
+
+    .middle {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .hero-section {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-text h1 {
+        font-size: 20px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .projects {
+        padding-inline: 5px;
+        padding-block: 10px;
+    }
+
+    .projects h1 {
+        font-size: 20px;
+    }
+
+    .projects p {
+        font-size: 14px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+    .flex-container {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .flex-container div {
+        width: 100%;
+    }
+
+    .flex-container div p {
+        font-size: 14px;
+    }
+
+    .flex-container div a {
+        font-size: 14px;
+    }
+
+    .design {
+        flex-direction: column;
+        padding-inline: 5px;
+        padding-block: 10px;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: unset;
+    }
+
+    .images img {
+        height: auto;
+    }
+
+    .service {
+        padding: 5px;
+    }
+
+    .cta-section {
+        padding: 10px 0;
+    }
+
+    .cta-container h2 {
+        font-size: 14px;
+    }
+
+    .cta-container p {
+        font-size: 12px;
+    }
+
+    .cta-button {
+        font-size: 10px;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .footer-section {
+        margin: 5px 0;
+    }
+
+    .footer-section h4 {
+        font-size: 12px;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer-section ul li a {
+        font-size: 12px;
+    }
+
+    .social-media ul {
+        gap: 3px;
+    }
+
+    .social-media ul li a img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .subscribe form {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .subscribe input {
+        width: 100%;
+    }
+
+    .subscribe button {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 414px) {
+    /* General adjustments */
+    body {
+        height: auto;
+    }
+
+    nav {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+
+    .hero-image img {
+        height: auto;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-text h1 {
+        font-size: 32px;
+    }
+
+    .about-text p {
+        font-size: 20px;
+    }
+
+    .projects {
+        padding: 20px;
+    }
+
+    .projects h1 {
+        font-size: 32px;
+    }
+
+    .projects p {
+        font-size: 20px;
+    }
+
+    .text p {
+        font-size: 20px;
+    }
+
+    .flex-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .flex-container div {
+        width: 100%;
+    }
+
+    .design {
+        flex-direction: column;
+    }
+
+    .images {
+        grid-template-areas: 
+            "image"
+            "image2"
+            "image3";
+    }
+
+    .images img:nth-child(1) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .images img:nth-child(2) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .images img:nth-child(3) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .service {
+        flex: 1 1 100%;
+        padding: 20px;
+    }
+
+    .service h1 {
+        font-size: 1.5em;
+    }
+
+    .service p {
+        font-size: 16px;
+    }
+
+    .cta-container h2 {
+        font-size: 20px;
+    }
+
+    .cta-container p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .subscribe input {
+        width: 60%;
+    }
+
+    .subscribe button {
+        padding: 8px 14px;
+    }
+}
+
